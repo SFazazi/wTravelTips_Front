@@ -1,20 +1,147 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{title}}!
-  </h1>
-  <img width="300" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<!-- header -->
+<!--<div class="container-fluid">
+  &lt;!&ndash; Static navbar &ndash;&gt;
+  <div class="navbar navbar-fixed-top navbar-default">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navbar-offcanvas" data-canvas="body">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Project name</a>
+    </div>
+    <div class="navbar-offcanvas offcanvas">
+      <a class="navmenu-brand" href="#">Project name</a>
+      <ul class="nav navbar-nav">
+        <li><a href="../navmenu/">Slide in</a></li>
+        <li><a href="../navmenu-push/">Push</a></li>
+        <li><a href="../navmenu-reveal">Reveal</a></li>
+        <li class="active"><a href="./">Off canvas navbar</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Action</a></li>
+            <li><a href="#">Another action</a></li>
+            <li><a href="#">Something else here</a></li>
+            <li class="divider"></li>
+            <li class="dropdown-header">Nav header</li>
+            <li><a href="#">Separated link</a></li>
+            <li><a href="#">One more separated link</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>&lt;!&ndash;/.nav-collapse &ndash;&gt;
+  </div>
+</div>-->
+<!--<nav class="navbar navbar-inverse bs-dark">
+  <div class="navbar-header">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <a class="navbar-brand" href="#">World Travel Tips</a>
+  </div>
+
+  <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+
+    <ul class="nav navbar-nav navbar-right">
+      <li class="active"><a href="#">Homepage <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Homepage <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Homepage <span class="sr-only">(current)</span></a></li>
+      <li><a href="#">Homepage <span class="sr-only">(current)</span></a></li>
+      <li class="dropdown">
+        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+          Account
+        </a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Followers</a></li>
+          <li role="separator" class="divider"></li>
+          <li><a href="#">Settings</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+</nav>-->
+
+<nav class="navbar navbar-inverse navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand title-navbar" routerLink="/home">World Travel Tips</a>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a routerLink="/home">Home</a></li>
+        <li><a routerLink="/advice">Advices</a></li>
+        <li><a routerLink="/destination">Destinations</a></li>
+        <li><a routerLink="/offer">Offers</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Languages<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><img src="../assets/images/lang/fr.png" /> &nbsp; French</a></li>
+            <li><a href="#"><img src="../assets/images/lang/en.png" /> &nbsp; English</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- /header -->
+
+<router-outlet></router-outlet>
+
+
+<!-- Footer Section -->
+<footer class="mea-footer-section">
+
+  <div class="footer-copyright-section">
+    <div class="container">
+      <div class="row">
+        <!-- Copuyright -->
+        <div class="col-md-12 text-center">
+          <p>&copy; 2018 world travel tips. All Rights Reserved. | Made with <i class="fas fa-heart" style="color: lightcoral"></i> for you</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</footer>
+<!-- Footer Section End -->
+
+<!-- Back To Top -->
+<a href="" class="back-to-top">
+  <div class="ripple-container"></div>
+  <i class="fa fa-angle-up">
+  </i>
+</a>
+
+<!-- Preloader -->
+<div id="loader">
+  <div class="square-spin">
+    <img src="../assets/images/Preloader.gif" alt="MEA Proloader">
+  </div>
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://github.com/angular/angular-cli/wiki">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
